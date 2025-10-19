@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 160917232574775654}
   - component: {fileID: 7685825165704148356}
   m_Layer: 5
-  m_Name: Icon_Timer
+  m_Name: Icon_Avtar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dc26955bf069b464e97ec3efccf2db14, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 3958650513607025421}
   - component: {fileID: 7570811183681280335}
   m_Layer: 5
-  m_Name: Button_Price_Coin
+  m_Name: Button_Remove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -459,8 +459,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.22000122, y: 131.8}
-  m_SizeDelta: {x: 289.40552, y: 120}
+  m_AnchoredPosition: {x: 0, y: 114}
+  m_SizeDelta: {x: 347.9481, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7756033208729674180
 CanvasRenderer:
@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 1196529403108961615}
   - component: {fileID: 5433521215760184427}
   - component: {fileID: 4565257509354945525}
+  - component: {fileID: 3906033303633864860}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -654,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -110.909966, y: 0}
+  m_AnchoredPosition: {x: -148, y: 0}
   m_SizeDelta: {x: 143.81488, y: 77.9473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5433521215760184427
@@ -756,6 +757,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3906033303633864860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126762576343226606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9937d0d69ea16f4ab05424f8c5c7500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordID: 21
 --- !u!1 &8606356918935450155
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,8 +781,9 @@ GameObject:
   - component: {fileID: 6559683282719724333}
   - component: {fileID: 7607719791873422820}
   - component: {fileID: 9200191939458636720}
+  - component: {fileID: 2915830728460256664}
   m_Layer: 5
-  m_Name: List
+  m_Name: Player Card Ui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,3 +850,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2915830728460256664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606356918935450155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0545842b31af64a96aeea2c0c71d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 104008148524889882}
+  avatarImage: {fileID: 7685825165704148356}
+  kickButton: {fileID: 7570811183681280335}

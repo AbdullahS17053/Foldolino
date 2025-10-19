@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8fcf258ed584c5940be56dbc6941dacf
+timeCreated: 1580909937
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264640
+  packageName: Localization (Multi-Language) v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/Localization/Example/Settings/LocalizationFile.json
+  uploadId: 741893

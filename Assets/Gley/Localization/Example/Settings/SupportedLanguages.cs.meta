@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a5400507efca7604ba27eace1fdfc809
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264640
+  packageName: Localization (Multi-Language) v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/Localization/Example/Settings/SupportedLanguages.cs
+  uploadId: 741893

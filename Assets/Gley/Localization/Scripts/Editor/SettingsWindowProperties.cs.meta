@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c63bb82d71f44104a95d998df89e123e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264640
+  packageName: Localization (Multi-Language) v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/Localization/Scripts/Editor/SettingsWindowProperties.cs
+  uploadId: 741893

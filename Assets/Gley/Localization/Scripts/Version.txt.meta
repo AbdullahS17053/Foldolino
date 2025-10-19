@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 72ec16691e3418649b9117e9b1c0dcd0
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 264640
+  packageName: Localization (Multi-Language) v2.0
+  packageVersion: 2.0.4
+  assetPath: Assets/Gley/Localization/Scripts/Version.txt
+  uploadId: 741893
