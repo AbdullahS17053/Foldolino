@@ -36,6 +36,7 @@ public class LocalDrawManager : MonoBehaviour
     public GameObject premiumPanel;
     public GameObject premiumBtn;
     public GameObject localPlayGetPremiumPanel;
+    public GameObject goBackPanel;
 
     [Header("Turn System")]
     public GameObject playerSelectionPopup;
@@ -51,6 +52,7 @@ public class LocalDrawManager : MonoBehaviour
     [Header("Mystery Creatures")]
     public TMP_Text titleTxt;
     public GameObject creatureSelPanel;
+    public GameObject sel1, sel2;
     public GameObject creaturePanelStartGame;
     public GameObject lvlCompleteBgCanvas;
     public Image lvlCompleteBgImg;
@@ -315,9 +317,14 @@ public class LocalDrawManager : MonoBehaviour
 
         localPlayPanel.SetActive(false);
         modeSelectionPanel.SetActive(true);
+        lvlCompleteBgCanvas.SetActive(false);
+        goBackPanel.SetActive(false);
         homeBtn.SetActive(false);
         shareBtn.SetActive(false);
         cam.orthographicSize = 3f;
+        cam.transform.position = new Vector3(cam.transform.position.x, 0, cam.transform.position.z);
+
+        CloseCreatureSelection();
 
         foreach (GameObject obj in offObjs)
         {
@@ -348,6 +355,30 @@ public class LocalDrawManager : MonoBehaviour
                 bodyPartTxt.text = API.GetText(WordIDs.Feet_Id);
                 break;
         }
+    }
+    bool isCustomEnabled = false;
+    public void CloseCreatureSelection()
+    {
+        if (!isCustomEnabled)
+        {
+            creatureSelPanel.SetActive(false);
+            playerSelectionPopup.SetActive(true);
+
+        }
+        else
+        {
+            sel2.SetActive(false);
+            sel1.SetActive(true);
+            creaturePanelStartGame.SetActive(false);
+            isCustomEnabled = false;
+        }
+    }
+
+    public void EnableCustomCreature()
+    {
+        sel1.SetActive(false);
+        sel2.SetActive(true);
+        isCustomEnabled = true;
     }
 
     public void QuitApplication()

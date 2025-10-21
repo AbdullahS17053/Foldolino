@@ -95,5 +95,6 @@ namespace Gley.Localization
 		View_Id = 9,
 		Waiting_For_Id = 56,
 		WantToQuit_Id = 29,
+		Go_Back_Id = 93,
 	}
 }
