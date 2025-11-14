@@ -9627,7 +9627,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 581341649}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1858771158}
+        m_TargetAssemblyTypeName: InAppManager, Assembly-CSharp
+        m_MethodName: PurchaseInAppByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: com.Foldolino.BuyPremium
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &581341649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33423,7 +33435,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1858771156}
   - component: {fileID: 1858771158}
-  - component: {fileID: 1858771157}
   m_Layer: 0
   m_Name: InApp Manager
   m_TagString: Untagged
@@ -33446,68 +33457,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1446889162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1858771157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858771155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f7dd963c1a8b427b96975fa211478a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  automaticallyConfirmTransaction: 1
-  dontDestroyOnLoad: 1
-  onProductsFetched:
-    m_PersistentCalls:
-      m_Calls: []
-  onProductsFetchFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchasesFetched:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchasesFetchFailure:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderPending:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderConfirmed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1858771158}
-        m_TargetAssemblyTypeName: InAppManager, Assembly-CSharp
-        m_MethodName: OnPurchaseSuccess
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderDeferred:
-    m_PersistentCalls:
-      m_Calls: []
-  onProductsFetchedLegacy:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseCompleteLegacy:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailedLegacy:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseDetailedFailedLegacy:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1858771158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33520,6 +33469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c801dc24ef49b8e459e121cbade75c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  products:
+  - id: com.Foldolino.BuyPremium
+    name: Buy Premium
+    isConsumable: 0
 --- !u!1 &1858874233
 GameObject:
   m_ObjectHideFlags: 0
@@ -35338,7 +35291,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1974262668}
-  - component: {fileID: 1974262669}
   m_Layer: 5
   m_Name: Premium Panel
   m_TagString: Untagged
@@ -35366,76 +35318,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1159.9199, y: -79.91998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1974262669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974262667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b79b5624d944058bd39aad2b90fb275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productId: com.Foldolino.BuyPremium
-  buttonType: 0
-  automaticallyConfirmTransaction: 1
-  onProductFetched:
-    m_PersistentCalls:
-      m_Calls: []
-  onProductFetchFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFetched:
-    m_PersistentCalls:
-      m_Calls: []
-  onTransactionsRestored:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderPending:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderConfirmed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 103580447}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1858771158}
-        m_TargetAssemblyTypeName: InAppManager, Assembly-CSharp
-        m_MethodName: OnPurchaseSuccess
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onPurchaseFailed:
-    m_PersistentCalls:
-      m_Calls: []
-  onOrderDeferred:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseCompleteLegacy:
-    m_PersistentCalls:
-      m_Calls: []
-  onPurchaseFailedLegacy:
-    m_PersistentCalls:
-      m_Calls: []
-  button: {fileID: 581341648}
 --- !u!1 &1975721575
 GameObject:
   m_ObjectHideFlags: 0
