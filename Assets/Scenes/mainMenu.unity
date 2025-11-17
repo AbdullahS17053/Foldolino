@@ -33470,7 +33470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   products:
-  - id: com.Foldolino.BuyPremium
+  - id: foldolino_premium
     name: Buy Premium
     isConsumable: 0
 --- !u!1 &1858874233
