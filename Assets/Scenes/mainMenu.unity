@@ -9322,7 +9322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 390.3, y: -90}
+  m_AnchoredPosition: {x: 90, y: -90}
   m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &568069864
@@ -17138,12 +17138,12 @@ GameObject:
   - component: {fileID: 983338836}
   - component: {fileID: 983338835}
   m_Layer: 5
-  m_Name: Button_Shop
+  m_Name: Button_Restore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &983338834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17159,9 +17159,9 @@ RectTransform:
   - {fileID: 2121326395}
   m_Father: {fileID: 873546441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983338835
@@ -17207,7 +17207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 983338836}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1858771158}
+        m_TargetAssemblyTypeName: InAppManager, Assembly-CSharp
+        m_MethodName: RestoreInApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &983338836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25295,6 +25307,7 @@ MonoBehaviour:
   messageTxt: {fileID: 438055916}
   missionTxt: {fileID: 642556940}
   selectLangTxt: {fileID: 79922381}
+  restorePurchaseTxt: {fileID: 2121326396}
 --- !u!1 &1432286281
 GameObject:
   m_ObjectHideFlags: 0
@@ -25332,7 +25345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 990.9, y: -90}
+  m_AnchoredPosition: {x: 90, y: -90}
   m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432286283
@@ -27692,7 +27705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 690.6, y: -90}
+  m_AnchoredPosition: {x: 90, y: -90}
   m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1537115024
@@ -37475,7 +37488,7 @@ GameObject:
   - component: {fileID: 2121326397}
   - component: {fileID: 2121326396}
   m_Layer: 5
-  m_Name: Text_Shop
+  m_Name: Text_Restore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37497,8 +37510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125.1}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: -136}
+  m_SizeDelta: {x: 284.9439, y: 74.0213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121326396
 MonoBehaviour:
@@ -37520,7 +37533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STORE
+  m_text: RESTORE PURCHASES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 607a42e3e90f14eecaf065ce4e7a9115, type: 2}
   m_sharedMaterial: {fileID: -3024823898696645451, guid: 607a42e3e90f14eecaf065ce4e7a9115, type: 2}
@@ -37547,7 +37560,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 31.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

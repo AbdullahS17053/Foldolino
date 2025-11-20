@@ -37,6 +37,7 @@ namespace Gley.Localization
 		Game_Over_Id = 86,
 		GameModes_Id = 11,
 		GIFTS_Id = 3,
+		Go_Back_Id = 93,
 		GoTo_Menu_Id = 87,
 		Hat_Id = 30,
 		Head_Id = 31,
@@ -95,6 +96,6 @@ namespace Gley.Localization
 		View_Id = 9,
 		Waiting_For_Id = 56,
 		WantToQuit_Id = 29,
-		Go_Back_Id = 93,
+		RestorePurchases_Id = 94,
 	}
 }
