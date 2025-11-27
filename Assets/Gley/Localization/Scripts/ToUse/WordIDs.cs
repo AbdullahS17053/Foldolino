@@ -79,6 +79,7 @@ namespace Gley.Localization
 		Quit_Id = 1,
 		Random_Creature_Id = 83,
 		Remove_Id = 21,
+		RestorePurchases_Id = 94,
 		Save_Id = 37,
 		Select_Creature_Btn_Id = 81,
 		Select_Creature_Id = 80,
@@ -96,6 +97,5 @@ namespace Gley.Localization
 		View_Id = 9,
 		Waiting_For_Id = 56,
 		WantToQuit_Id = 29,
-		RestorePurchases_Id = 94,
 	}
 }

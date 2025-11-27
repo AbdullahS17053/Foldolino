@@ -24,7 +24,7 @@ public class LanguageManager : MonoBehaviour
     public TMP_Text messageTxt;
     public TMP_Text missionTxt;
     public TMP_Text selectLangTxt;
-    public TMP_Text restorePurchaseTxt;
+    public TMP_Text premiumTxt;
 
 
 
@@ -49,7 +49,7 @@ public class LanguageManager : MonoBehaviour
         messageTxt.text = API.GetText(WordIDs.MESSAGES_Id);
         missionTxt.text = API.GetText(WordIDs.MISSION_Id);
         selectLangTxt.text = API.GetText(WordIDs.SelectLang_Id);
-        restorePurchaseTxt.text = API.GetText(WordIDs.RestorePurchases_Id);
+        premiumTxt.text = API.GetText(WordIDs.Premium_Id);
     }
 
     void SetCurrentLocalLanguageName()
